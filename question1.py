@@ -31,5 +31,6 @@ freqs = Counter(cleaned_tokens)
 top_10 = freqs.most_common(10)
 
 # Print results
+print("The ten most frequent words in this text and their counts are:")
 for word, count in top_10:
     print(f"{word} -> {count}")

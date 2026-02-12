@@ -31,5 +31,6 @@ for i in range(len(cleaned) - 1):
 bigram_counts = Counter(bigrams)
 
 # Print the 5 most frequent bigrams
+print("The 5 most frequent bigrams in this text and their counts are:")
 for (w1, w2), count in bigram_counts.most_common(5):
     print(f"{w1} {w2} -> {count}")

@@ -13,10 +13,10 @@ def find_lines_containing(filename, keyword):
 
     return results
 
-matches = find_lines_containing("sample-file.txt", "lorem")
+matches = find_lines_containing("sample-file.txt", "data")
 
 # Print how many matching lines were found
-print("The word appears", len(matches), "times in this file")
+print("This word appears", len(matches), "times in this file")
 if len(matches) < 3:
     print("Fewer than 3 matching lines found.")
 
