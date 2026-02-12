@@ -40,7 +40,7 @@ for h2 in content_div.find_all("h2"):
 
     headings.append(text)
 
-# Debug: show how many were found
+# Show how many were found
 print(f"Found {len(headings)} headings")
 
 with open("headings.txt", "w", encoding="utf-8") as f:

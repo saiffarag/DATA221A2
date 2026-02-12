@@ -21,8 +21,14 @@ selected_rows = None
 
 # Locate the first table with at least 3 data rows (rows containing <td>)
 for table in content_div.find_all("table"):
+
+    table_classes = table.get("class", [])
+    if any(cls in table_classes for cls in ["navbox", "vertical-navbox", "sidebar", "infobox"]):
+        continue
+
     rows = table.find_all("tr")
     data_rows = [r for r in rows if r.find("td") is not None]
+
     if len(data_rows) >= 3:
         selected_table = table
         selected_rows = rows

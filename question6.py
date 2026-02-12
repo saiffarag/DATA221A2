@@ -13,5 +13,5 @@ avg_unemployment = df.groupby("risk")["PctUnemployed"].mean()
 
 # Print results
 print("Average Unemployment Rate:")
-print(f"HighCrime: {avg_unemployment['HighCrime']}")
-print(f"LowCrime: {avg_unemployment['LowCrime']}")
+print(f"HighCrime group: {avg_unemployment['HighCrime']}")
+print(f"LowCrime group: {avg_unemployment['LowCrime']}")

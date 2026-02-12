@@ -13,7 +13,7 @@ def find_lines_containing(filename, keyword):
 
     return results
 
-matches = find_lines_containing("sample-file.txt", "data")
+matches = find_lines_containing("sample-file.txt", "lorem")
 
 # Print how many matching lines were found
 print("This word appears", len(matches), "times in this file")

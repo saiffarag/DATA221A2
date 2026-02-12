@@ -19,5 +19,5 @@ num_students = len(filtered)
 avg_grade = filtered["grade"].mean()
 
 # Print results
-print(num_students)
-print(avg_grade)
+print("There are", num_students, "students who meet this criteria")
+print("They have an average grade of: ",avg_grade)
